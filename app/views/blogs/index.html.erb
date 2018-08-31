@@ -1,0 +1,12 @@
+<div>
+  <% @users.each do |user| %>
+    <div class="box__cell pl1em">
+      <h3 class="text-middle text-break color-sub">
+        <%= link_to "#{user.email} のブログ" , "/users/#{user.id}/", method: :get %>
+      </h3>
+      <p class="text-xsmall">
+      </p>
+      <p class="text-xsmall opacity-60"></p>
+    </div>
+  <% end %>
+</div>
